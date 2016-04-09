@@ -29,6 +29,10 @@ zstyle -s ':prezto:module:git:status:ignore' submodules '_git_status_ignore_subm
 # Git
 alias g='git'
 
+# Add (a)
+alias ga='git add'
+alias gaa='git add -A'
+
 # Branch (b)
 alias gb='git branch'
 alias gbc='git checkout -b'
@@ -66,13 +70,17 @@ alias gCt='git checkout --theirs --'
 alias gCT='gCt $(gCl)'
 
 # Data (d)
-alias gd='git ls-files'
-alias gdc='git ls-files --cached'
-alias gdx='git ls-files --deleted'
-alias gdm='git ls-files --modified'
-alias gdu='git ls-files --other --exclude-standard'
-alias gdk='git ls-files --killed'
-alias gdi='git status --porcelain --short --ignored | sed -n "s/^!! //p"'
+#alias gd='git ls-files'
+#alias gdc='git ls-files --cached'
+#alias gdx='git ls-files --deleted'
+#alias gdm='git ls-files --modified'
+#alias gdu='git ls-files --other --exclude-standard'
+#alias gdk='git ls-files --killed'
+#alias gdi='git status --porcelain --short --ignored | sed -n "s/^!! //p"'
+
+# Diff
+alias gd='git diff'
+alias gdc='git diff --cached'
 
 # Fetch (f)
 alias gf='git fetch'
@@ -143,18 +151,21 @@ alias gRs='git remote show'
 alias gRb='git-hub-browse'
 
 # Stash (s)
-alias gs='git stash'
-alias gsa='git stash apply'
-alias gsx='git stash drop'
-alias gsX='git-stash-clear-interactive'
-alias gsl='git stash list'
-alias gsL='git-stash-dropped'
-alias gsd='git stash show --patch --stat'
-alias gsp='git stash pop'
-alias gsr='git-stash-recover'
-alias gss='git stash save --include-untracked'
-alias gsS='git stash save --patch --no-keep-index'
-alias gsw='git stash save --include-untracked --keep-index'
+#alias gs='git stash'
+#alias gsa='git stash apply'
+#alias gsx='git stash drop'
+#alias gsX='git-stash-clear-interactive'
+#alias gsl='git stash list'
+#alias gsL='git-stash-dropped'
+#alias gsd='git stash show --patch --stat'
+#alias gsp='git stash pop'
+#alias gsr='git-stash-recover'
+#alias gss='git stash save --include-untracked'
+#alias gsS='git stash save --patch --no-keep-index'
+#alias gsw='git stash save --include-untracked --keep-index'
+
+# Status
+alias gst='git status'
 
 # Submodule (S)
 alias gS='git submodule'
