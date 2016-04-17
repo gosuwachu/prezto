@@ -69,6 +69,10 @@ alias gCO='gCo $(gCl)'
 alias gCt='git checkout --theirs --'
 alias gCT='gCt $(gCl)'
 
+# Diff (d)
+alias gd='git diff'
+alias gdc='git diff --cached'
+
 # Data (d)
 #alias gd='git ls-files'
 #alias gdc='git ls-files --cached'
@@ -77,10 +81,6 @@ alias gCT='gCt $(gCl)'
 #alias gdu='git ls-files --other --exclude-standard'
 #alias gdk='git ls-files --killed'
 #alias gdi='git status --porcelain --short --ignored | sed -n "s/^!! //p"'
-
-# Diff
-alias gd='git diff'
-alias gdc='git diff --cached'
 
 # Fetch (f)
 alias gf='git fetch'
@@ -150,22 +150,22 @@ alias gRp='git remote prune'
 alias gRs='git remote show'
 alias gRb='git-hub-browse'
 
-# Stash (s)
-#alias gs='git stash'
-#alias gsa='git stash apply'
-#alias gsx='git stash drop'
-#alias gsX='git-stash-clear-interactive'
-#alias gsl='git stash list'
-#alias gsL='git-stash-dropped'
-#alias gsd='git stash show --patch --stat'
-#alias gsp='git stash pop'
-#alias gsr='git-stash-recover'
-#alias gss='git stash save --include-untracked'
-#alias gsS='git stash save --patch --no-keep-index'
-#alias gsw='git stash save --include-untracked --keep-index'
-
-# Status
+# Status (s)
 alias gst='git status'
+
+# Stash (s)
+# alias gs='git stash'
+# alias gsa='git stash apply'
+# alias gsx='git stash drop'
+# alias gsX='git-stash-clear-interactive'
+# alias gsl='git stash list'
+# alias gsL='git-stash-dropped'
+# alias gsd='git stash show --patch --stat'
+# alias gsp='git stash pop'
+# alias gsr='git-stash-recover'
+# alias gss='git stash save --include-untracked'
+# alias gsS='git stash save --patch --no-keep-index'
+# alias gsw='git stash save --include-untracked --keep-index'
 
 # Submodule (S)
 alias gS='git submodule'
